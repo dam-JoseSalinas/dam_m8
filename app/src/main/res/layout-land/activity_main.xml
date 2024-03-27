@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/margen_botones"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloAplicacion"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:stretchColumns="*">
+        <TableRow>
+            <Button android:id="@+id/Button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Arrancar" />
+            <Button android:id="@+id/Button02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Configurar"
+                android:onClick="lanzarPreferencias"/>
+        </TableRow>
+        <TableRow>
+            <Button android:id="@+id/Button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Acercade" />
+                <!--android:onClick="lanzarAcercaDe"-->
+            <Button android:id="@+id/Button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lanzarPuntuaciones"
+                android:text="@string/Salir" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

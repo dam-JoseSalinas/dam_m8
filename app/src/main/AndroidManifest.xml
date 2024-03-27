@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_mi_icono"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_mi_icono"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Asteroides">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="Acerca de ..."
+            android:name=".AcercaDeActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity
+            android:name=".Preferencias"
+            android:label="Preferencias"/>
+        <activity android:name=".Puntuaciones"></activity>
+        <activity android:name=".Juego" android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <service android:name=".ServicioMusica"/>
+        <receiver android:name="ReceptorSMS"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="true" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+</manifest>

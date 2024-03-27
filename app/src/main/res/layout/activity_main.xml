@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:style="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="@dimen/margen_botones"
+    tools:context=".MainActivity"
+    android:background="@drawable/degradado">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloAplicacion"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarJuego"
+        android:text="@string/Arrancar" />
+    <!--style="@style/EstiloBoton"-->
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarPreferencias"
+        android:text="@string/Configurar" />
+    <!--style="@style/EstiloBoton.Alternativo"-->
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Acercade"/>
+    <!--android:onClick="lanzarAcercaDe"-->
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarPuntuaciones"
+        android:text="@string/Salir" />
+</LinearLayout>
+<!--
+<android.gesture.GestureOverlayView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gestures"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gestureStrokeType="multiple"
+    android:fadeOffset="800"
+
+    android:background="@drawable/degradado">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloAplicacion"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarJuego"
+        android:text="@string/Arrancar" />
+    <!style="@style/EstiloBoton">
+
+    <Button
+        android:id="@+id/button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarPreferencias"
+        android:text="@string/Configurar" />
+    <!style="@style/EstiloBoton.Alternativo">
+
+    <Button
+        android:id="@+id/button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Acercade"/>
+    <!android:onClick="lanzarAcercaDe"
+
+    <Button
+        android:id="@+id/button04"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarPuntuaciones"
+        android:text="@string/Salir" />
+
+</android.gesture.GestureOverlayView>-->
